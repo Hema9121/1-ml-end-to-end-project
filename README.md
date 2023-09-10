@@ -41,3 +41,18 @@ Continuous Integration (CI) is the process of automatically building, testing, a
 Continuous Deployment (CD), on the other hand, is the practice of automatically deploying new changes to the codebase in a production environment. Once the code has been integrated and tested successfully, it is automatically deployed to a staging environment for further testing. If the code passes the staging environment, it is then deployed to a production environment where end-users can use it.
 
 In summary, CI and CD work hand-in-hand to ensure that software code is integrated, tested, and deployed quickly and efficiently. CI helps to ensure that all changes to the codebase are continuously tested and validated, while CD ensures that those changes are safely and efficiently deployed to end-users. Together, these two practices help to increase the speed and quality of software development while reducing the risk of errors and issues.
+
+Creating conda environment===> conda create -p venv python==3.11 -y
+
+----to activate the created conda env===>
+
+conda activate venv/
+
+OR
+
+conda activate venv
+
+----to install the requirements.txt file
+
+pip install -r requirements.txt
+
