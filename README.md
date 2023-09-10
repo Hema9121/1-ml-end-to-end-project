@@ -42,7 +42,7 @@ Continuous Deployment (CD), on the other hand, is the practice of automatically 
 
 In summary, CI and CD work hand-in-hand to ensure that software code is integrated, tested, and deployed quickly and efficiently. CI helps to ensure that all changes to the codebase are continuously tested and validated, while CD ensures that those changes are safely and efficiently deployed to end-users. Together, these two practices help to increase the speed and quality of software development while reducing the risk of errors and issues.
 
-Creating conda environment===> conda create -p venv python==3.11 -y
+----Creating conda environment===> conda create -p venv python==3.11 -y
 
 ----to activate the created conda env===>
 
@@ -55,4 +55,34 @@ conda activate venv
 ----to install the requirements.txt file
 
 pip install -r requirements.txt
+
+----To Add files to git
+
+git add .
+
+OR
+
+git add <file_name>
+
+Note: To ignore file or folder from git we can write name of file/folder in .gitignore file
+
+----To check the git status
+
+git status
+
+----To check all version maintained by git
+
+git log
+
+----To create version/commit all changes by git
+
+git commit -m "message
+
+----To send version/changes to github
+
+git push origin main
+
+----To check remote url
+
+git remote -v
 
