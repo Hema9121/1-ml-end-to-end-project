@@ -12,7 +12,7 @@
 
 4.GIT cli
 
-5.GIT Documentation
+5.[GIT Documentation](https://git-scm.com/docs/gittutorial)
 
 ----what is docker?
 
@@ -86,3 +86,48 @@ git push origin main
 
 git remote -v
 
+----Git rollback? refers to the process of undoing changes made to a Git repository.
+
+1. Git reset command: This is the most basic approach for rolling back to a previous commit. The git reset command is used to change the current head to the specified commit.
+
+2. Git revert command: This method reverses a commit by creating a new commit with the inverse changes. This is a better option when changes have already been pushed to the repository.
+
+----To setup CI/CD pipeline in heroku we need 3 information
+
+HEROKU_EMAIL = hemasrinivasulu.ds@gmail.com
+HEROKU_API_KEY = <>
+HEROKU_APP_NAME = <>
+
+----BUILD DOCKER IMAGE
+
+docker build -t <image_name>:<tagname> .
+
+Note: Image name for docker must be lowercase
+
+----To list docker image
+
+docker images
+
+----Run docker image
+
+docker run -p 5000:5000 -e PORT=5000 <image id>
+
+----To check running container in docker
+
+docker ps
+
+----To stop docker conatiner
+
+docker stop <container_id>
+
+python setup.py install
+
+----Install ipykernel
+
+pip install ipykernel
+
+----Data Drift: When your datset stats gets change we call it as data drift
+
+----what is gunicorn?
+
+Gunicorn (short for Green Unicorn) is a WSGI (Web Server Gateway Interface) HTTP server that is used to serve Python web applications. It is a pure-Python HTTP server that can run a number of concurrent HTTP requests and handle them efficiently. It is designed to work well with frameworks such as Django, Flask, Pyramid, and others. Gunicorn can handle more traffic than the default development server and can improve performance with multiple worker processes. It is widely used in production environments to serve Python web applications.
