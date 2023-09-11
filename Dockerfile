@@ -1,6 +1,6 @@
-from python:3.11
-copy . /app
-workdir /app
-run pip install -r requirements.txt
-expose $port
-cmd gunicorn --workers=4 --bind 0.0.0.0:$port app:app
+FROM python:3.11
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE $port
+CMD gunicorn --workers=4 --bind 0.0.0.0:$port app:app
